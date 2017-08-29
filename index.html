@@ -1,8 +1,146 @@
-<!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Grayscale - Start Bootstrap Theme</title>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Cabin:700" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.min.css" rel="stylesheet"> </head>
+
+<body id="page-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">SOLID:</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> Menu <i class="fa fa-bars"></i> </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#SRP">Single Responsibility</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#OCP">Open Closed</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#LSP">Liskov Substitution</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#ISP">Interface Segregation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#DIP">Dependency İnversion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Intro Header -->
+  <header class="masthead">
+    <div class="intro-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <p class="intro-text">Temiz ve sonradan gelişme açık kod yazmanın 5 temel kuralı diyebiliriz.
+              <br>SOLID, 2000’li yılların başında Robert C. Martin tarafından nesne yönelimli programlamanın ve nesne yönelimli tasarımın 5 temel prensipleri bir araya getirilerek ortaya çıkmıştır.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              <br>Single Responsibility-Tek Sorumluk Prensibi&nbsp;
+              <br>Open Closed-Açık Kapalı Prensibi
+              <br>Liskov Substitution-Liskov Prensibi
+              <br>Interface Segregation-&nbsp;Arayüz Prensibi
+              <br>Dependency İnversion- Bağımlılıkları Tersine Çevirme Prensibi
+              <br>
+              <br> </p>
+            <a href="#SRP" class="btn btn-circle js-scroll-trigger"> <i class="fa fa-angle-double-down animated"></i> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- About Section -->
+  <!-- Download Section -->
+  <section id="SRP" class="download-section content-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>SRP</h2>
+        </div>
+      </div>
+      <div class="col-lg-20 mx-auto">
+        <p>Her sınıf yada methodun tek bir görevi vardır. Genişliyebilir ve tekrar kullanıbilir yapılar için tek sorumluluk ilkesine bağımlı kalmak gerekmektedir. Çalışıyorsa dokunmayalım gibi klişe lafların temeli bu ilkeye bağlı kalmadan kod geliştirdiğimiz
+          için olmaktadır. Örnek olarak insan sınıfı üzerinde insanı ilgilendiren methodlardan başka methodların olmaması gerekmektedir örneğin insan temel methodları hava almak, konuşmak vs. dediğimizde üzerinde birde çevre sınıfını ilgilendiren fotosentez
+          methodu olmaması gerekmektedir.&nbsp;</p>
+        <a href="#" class="btn btn-default btn-lg">ÖRNEK KOD</a>
+      </div>
+      <a href="#OCP" class="btn btn-circle js-scroll-trigger"> <i class="fa fa-angle-double-down animated"></i> </a>
+    </div>
+  </section>
+  <section id="OCP" class="download-section content-section text-center">
+    <div class="container">
+      <div class="col-lg-20 mx-auto">
+        <h2>OCP</h2>
+        <p>Yazılım dünyasında değişiklik mutlaka gerçekleşmektedir. Bu değişiklik sırasında en az zaman kaybı ile gerçekleşmesini sağlamak içn bu prensibi kod geliştirmemize eklersek kod değişim maliyetlerini azaltabiliriz. Burada ki temel durum bir kod
+          değişime kapalı gelişime açık olması geremektedir. İki tane veritabanına bağlatı sağlamış çalışıyorsunuz ve üçüncü bir veritabanı geldiğinde kodlarınızda bir değişiklik olmadan ve diğer ikisi çalışırken üçüncü veritabanıda sitemde stabil olarak
+          çalışması gerekmektedir. Yani siz bağlantı methodlarınızı değiştirmeden yeni bağlantı methodunu ekleyip çalışır duruma getirmeniz gerekmektedir.</p>
+        <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">ÖRNEK KOD</a>
+      </div>
+      <a href="#LSP" class="btn btn-circle js-scroll-trigger"> <i class="fa fa-angle-double-down animated"></i> </a>
+    </div>
+  </section>
+  <section id="LSP" class="download-section content-section text-center">
+    <div class="container">
+      <div class="col-lg-20 mx-auto">
+        <h2>LSP</h2>
+        <p>Alt sınıflardan oluşturulan nesneler üst sınıfların nesneleriyle yer değiştirdiklerinde aynı davranışı gösterebilmelidir. Alt sınıfların üst sınıflara bağımlıkları olmadan üst sınıf türüne dönüştürümesi sağlayabilmek gerekmektedir.</p>
+        <a href="#"
+          class="btn btn-default btn-lg">ÖRNEK KOD</a>
+      </div>
+      <a href="#ISP" class="btn btn-circle js-scroll-trigger"> <i class="fa fa-angle-double-down animated"></i> </a>
+    </div>
+  </section>
+  <section id="ISP" class="download-section content-section text-center">
+    <div class="container">
+      <div class="col-lg-20 mx-auto">
+        <h2>ISP</h2>
+        <p>Birbiriyle ilişkili olmayan birçok metodu ihtiva eden büyük bir interface sınıf yerine, birbiriyle ilişkili metotların yer aldığı birden fazla interface sınıfı daha makbuldür.</p>
+        <a href="#" class="btn btn-default btn-lg">ÖRNEK KOD</a>
+      </div>
+      <a href="#DIP" class="btn btn-circle js-scroll-trigger"> <i class="fa fa-angle-double-down animated"></i> </a>
+    </div>
+  </section>
+  <section id="DIP" class="download-section content-section text-center">
+    <div class="container">
+      <div class="col-lg-20 mx-auto">
+        <h2>DIP</h2>
+        <p>Somut sınıflara olan bağımlılıklar soyut sınıflar ve interface sınıflar kullanılarak ortadan kaldırılmalıdır, çünkü somut sınıflar çok fazla değişikliğe uğrarlar.</p>
+        <a href="#" class="btn btn-default btn-lg">ÖRNEK KOD</a>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <!-- Map Section -->
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p>Copyright © Mustafa ERGAN 2017</p>
+    </div>
+  </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/popper/popper.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&amp;sensor=false"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.min.js"></script>
 </body>
+
 </html>
